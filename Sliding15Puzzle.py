@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import PySimpleGUI as sg
 import random
 
@@ -89,12 +90,12 @@ class Sliding15Puzzle():
         # 「スペース」ボタンの（行, 列）
         sp_row, sp_col = divmod(sp_idx, 4)
 
-        # 200～3000回動かす
+        # 「スペース」を上下左右に動かす（移動回数はランダムに決める）
         n_loops = random.randrange(200, 300)
         for n in range(n_loops):
             target_idx = -1
             while target_idx == -1:
-                # 上下左右をランダムに決める
+                # 移動方向（上下左右）をランダムに決める
                 direction = random.randrange(0, 99) % 4
                 target_row = sp_row
                 target_col = sp_col
@@ -203,17 +204,20 @@ class Sliding15Puzzle():
             # 「スペース」ボタン押下
             return
 
+        # クリックした数字ボタンを「上」に移動
         if self.up_swap(pos):
-            # タッチした数字ボタンの「上」がスペース
             pass
+
+        # クリックした数字ボタンを「下」に移動
         elif self.down_swap(pos):
-            # タッチした数字ボタンの「下」がスペース
             pass
+
+        # クリックした数字ボタンを「左」に移動
         elif self.left_swap(pos):
-            # タッチした数字ボタンの「左」がスペース
             pass
+
+        # クリックした数字ボタンを「右」に移動
         elif self.right_swap(pos):
-            # タッチした数字ボタンの「右」がスペース
             pass
 
         if self.is_complete():
