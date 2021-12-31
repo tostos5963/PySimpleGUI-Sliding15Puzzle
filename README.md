@@ -34,3 +34,10 @@ PySimpleGUI を使用して作成したスライディングパズル（１５�
 
     動作すると思いますが所持していないため確認できていません。
 
+
+ソースコードの説明
+------------------
+
+以下のURLでソースコードの説明をしています。
+
+* https://naotoshisami.com/2021/12/pysimplegui-python-gui-sliding-puzzle-15puzzle/
