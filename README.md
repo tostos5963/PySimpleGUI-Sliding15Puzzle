@@ -2,6 +2,8 @@
 
 PySimpleGUI を使用して作成したスライディングパズル（１５パズル）です。
 
+![15puzzle](https://user-images.githubusercontent.com/15520094/147867379-827b1f37-16f6-4607-8cf2-1779e7504b3a.gif)
+
 ダウンロード
 ------------
 
