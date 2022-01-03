@@ -41,7 +41,7 @@ class Sliding15Puzzle():
     def main_loop(self):
         while True: # Event Loop
             event, values = self.window.read()
-            if event in (None, '終了'):
+            if event in (sg.WIN_CLOSED, '終了'):
                 # 「終了」ボタンが押下されたらループを抜ける
                 break
 
@@ -55,10 +55,10 @@ class Sliding15Puzzle():
     # 数字に対応する画像データを取得
     def image_data(self, no):
         try:
-            ifname = self.images[no]
+            imgdata = self.images[no]
         except:
-            ifname = self.images[0]
-        return ifname
+            imgdata = self.images[0]
+        return imgdata
 
     # 数字（0～15）をシャッフル
     # 単純にシャッフルすると、解けない配置になることがあるため
