@@ -1,6 +1,6 @@
 # PySimpleGUI-Sliding15Puzzle
 
-PySimpleGUI を使用して作成したスライディングパズル（１５パズル）です。
+FreeSimpleGUI(PySimpleGUI) を使用して作成したスライディングパズル（１５パズル）です。
 
 ![15puzzle](https://user-images.githubusercontent.com/15520094/147867379-827b1f37-16f6-4607-8cf2-1779e7504b3a.gif)
 
@@ -15,13 +15,13 @@ PySimpleGUI を使用して作成したスライディングパズル（１５�
 
 【Windows】
 
-    pip install pysimplegui
+    pip install FreeSimpleGUI
 
     python Sliding15Puzzle.py
 
 【Linux(ubuntu)】
 
-    pip3 install pysimplegui
+    pip3 install FreeSimpleGUI
 
     python3 Sliding15Puzzle.py
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 import random
 
 class Sliding15Puzzle():
